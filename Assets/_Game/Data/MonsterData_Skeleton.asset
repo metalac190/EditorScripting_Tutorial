@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Skeleton
   _monsterType: 1
-  _changeToDropItem: 20
-  _rangeOfAwareness: 10
+  _chanceToDropItem: 20
+  _rangeOfAwareness: 5
   _damage: 2
   _health: 3
   _speed: 2
