@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _name: Dragon
   _monsterType: 3
-  _changeToDropItem: 100
+  _chanceToDropItem: 20
   _rangeOfAwareness: 12
   _damage: 5
   _health: 8
