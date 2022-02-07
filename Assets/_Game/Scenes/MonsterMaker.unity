@@ -535,6 +535,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _name: skeleton
+  _monsterType: 1
   _changeToDropItem: 70.5
   _rangeOfAwareness: 0
   _damage: 0

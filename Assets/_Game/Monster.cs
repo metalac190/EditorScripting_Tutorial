@@ -7,6 +7,8 @@ public class Monster : MonoBehaviour
     [Header("General Stats")]
     [SerializeField]
     private string _name;
+    [SerializeField]
+    private MonsterType _monsterType = MonsterType.None;
     [SerializeField][Range(0,100)]
     private float _changeToDropItem;
     [SerializeField][Tooltip("Radius size where monster will see the player")]
@@ -24,4 +26,12 @@ public class Monster : MonoBehaviour
     [SerializeField][Tooltip("Speaks dialogue when entering combat")]
     [TextArea()]
     private string _battleCry;
+
+    private void Awake()
+    {
+        if(_monsterType == MonsterType.Undead)
+        {
+            Debug.Log("Use the holy water!");
+        }
+    }
 }
