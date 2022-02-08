@@ -85,8 +85,13 @@ public class MonsterDataEditor : Editor
             EditorGUILayout.PropertyField(_speed, new GUIContent("Speed"));
             EditorGUILayout.EndHorizontal();
 
+            EditorGUILayout.BeginHorizontal();
             EditorGUILayout.PropertyField(_damage, new GUIContent("Damage"));
-
+            if(GUILayout.Button("Random Stats"))
+            {
+                RandomizeStats();
+            }
+            EditorGUILayout.EndHorizontal();
 
             EditorGUI.indentLevel--;
         }
@@ -105,5 +110,12 @@ public class MonsterDataEditor : Editor
         Rect rect = GUILayoutUtility.GetRect(18, 40, "TextField");
         EditorGUI.ProgressBar(rect, value, label);
         EditorGUILayout.Space(10);
+    }
+
+    void RandomizeStats()
+    {
+        _health.intValue = UnityEngine.Random.Range(1, 25);
+        _speed.intValue = UnityEngine.Random.Range(1, 25);
+        _damage.intValue = UnityEngine.Random.Range(1, 25);
     }
 }

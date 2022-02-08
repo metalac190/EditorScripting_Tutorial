@@ -17,7 +17,7 @@ MonoBehaviour:
   _chanceToDropItem: 44.3
   _rangeOfAwareness: 12
   _canEnterCombat: 1
-  _damage: 5
-  _health: 8
-  _speed: 3
+  _damage: 20
+  _health: 19
+  _speed: 12
   _battleCry: ...
