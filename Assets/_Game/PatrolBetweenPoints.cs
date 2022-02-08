@@ -28,9 +28,13 @@ public class PatrolBetweenPoints : MonoBehaviour
         Gizmos.color = Color.yellow;
         for (int i = 0; i < _patrolPoints.Length-1; i++)
         {
-            Vector3 thisPoint = _patrolPoints[i].position;
-            Vector3 nextPoint = _patrolPoints[i + 1].position;
-            Gizmos.DrawLine(thisPoint, nextPoint);
+            if(_patrolPoints[i] != null && _patrolPoints[i+1] != null)
+            {
+                Vector3 thisPoint = _patrolPoints[i].position;
+                Vector3 nextPoint = _patrolPoints[i + 1].position;
+                Gizmos.DrawLine(thisPoint, nextPoint);
+            }
+
         }
     }
 }

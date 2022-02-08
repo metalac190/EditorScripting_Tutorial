@@ -16,7 +16,8 @@ MonoBehaviour:
   _monsterType: 1
   _chanceToDropItem: 20
   _rangeOfAwareness: 5
-  _damage: 2
-  _health: 3
-  _speed: 2
+  _canEnterCombat: 1
+  _damage: 12
+  _health: 20
+  _speed: 10
   _battleCry: I've got a bone to pick with you!

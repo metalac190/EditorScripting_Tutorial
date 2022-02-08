@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1278b1ff678fd4849872b0e65cf4d129, type: 3}
   m_Name: MonsterData_Dragon
   m_EditorClassIdentifier: 
-  _name: Dragon
+  _name: LizardMan
   _monsterType: 3
-  _chanceToDropItem: 20
+  _chanceToDropItem: 44.3
   _rangeOfAwareness: 12
+  _canEnterCombat: 1
   _damage: 5
   _health: 8
   _speed: 3
