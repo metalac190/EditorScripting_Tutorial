@@ -71,7 +71,11 @@ public class MonsterDataEditor : Editor
         if(_canEnterCombat.boolValue == true)
         {
             EditorGUI.indentLevel++;
+
             EditorGUILayout.LabelField("Combat Stats", EditorStyles.boldLabel);
+            EditorGUILayout.BeginHorizontal();
+
+            EditorGUIUtility.labelWidth = 70;
             EditorGUILayout.PropertyField(_health, new GUIContent("Health"));
             if (_health.intValue < 0)
             {
@@ -79,7 +83,11 @@ public class MonsterDataEditor : Editor
                     "Should not have negative Health", MessageType.Warning);
             }
             EditorGUILayout.PropertyField(_speed, new GUIContent("Speed"));
+            EditorGUILayout.EndHorizontal();
+
             EditorGUILayout.PropertyField(_damage, new GUIContent("Damage"));
+
+
             EditorGUI.indentLevel--;
         }
 
