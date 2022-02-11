@@ -31,6 +31,9 @@ public class MonsterData : ScriptableObject
     [TextArea()]
     private string _battleCry = "...";
 
+    [SerializeField]
+    private MonsterAbility[] _abilities;
+
     public string Name => _name;
     public MonsterType MonsterType => _monsterType;
     public float ChanceToDropItem => _chanceToDropItem;
@@ -42,4 +45,5 @@ public class MonsterData : ScriptableObject
     public int Speed => _speed;
 
     public string BattleCry => _battleCry;
+    public MonsterAbility[] Abilities => _abilities;
 }

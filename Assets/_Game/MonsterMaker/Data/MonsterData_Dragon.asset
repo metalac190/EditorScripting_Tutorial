@@ -17,7 +17,17 @@ MonoBehaviour:
   _chanceToDropItem: 44.3
   _rangeOfAwareness: 12
   _canEnterCombat: 1
-  _damage: 20
-  _health: 19
-  _speed: 12
+  _damage: 22
+  _health: 9
+  _speed: 6
   _battleCry: ...
+  _abilities:
+  - _name: Fireball
+    _damage: 10
+    _element: 0
+  - _name: Mystic Orb
+    _damage: 5
+    _element: 0
+  - _name: Lightning
+    _damage: 8
+    _element: 0
